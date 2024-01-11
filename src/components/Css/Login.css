@@ -1,0 +1,24 @@
+
+  .submit{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .switch{
+   margin-top: 30%;
+   width: 10%;
+   
+  }
+  .batan{
+    width: 80%;
+    margin-left: 37px;
+  }
+  .colo{
+    width: 100%;
+    background-color: white;
+  }
+  .canvas{
+    background-color: darkslategray;
+    height: 100%;
+  }
+  
