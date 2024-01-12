@@ -9,6 +9,12 @@
    width: 10%;
    
   }
+  .switch:hover{
+    color: black;
+    background-color: rgb(80, 54, 92);
+    transition: 0.2s;
+  }
+
   .batan{
     width: 80%;
     margin-left: 37px;
@@ -21,4 +27,30 @@
     background-color: darkslategray;
     height: 100%;
   }
-  
+  .image{
+    border-radius: 50%;
+    width: 50%;
+    margin-left: 95px;
+    margin-top: 60px;
+  }
+  .main-batan{
+    margin-top: 10px;
+  }
+  .view{
+    background-color: aliceblue;
+  }
+  table, tr, th, td{
+    border: 2px  solid darkslategray;
+    text-align: center;
+  }
+  .delete{
+    border-radius: 8px;
+    background-color: brown;
+    color: white;
+    width: 100px;
+  }
+  .delete:hover{
+    background-color: white;
+    color: brown;
+    transition: 0.6s;
+  }

@@ -5,6 +5,7 @@ import Login from "../src/components/Login";
 import Forgetpassword from "../src/components/Forgetpassword";
 import AddCourse from './components/Addcourse';
 import Admin from './components/Admin';
+import View_course from './components/View';
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
           <Route path='/forget' element={<Forgetpassword />}></Route>
           <Route path='/addcourse' element={<AddCourse />}></Route>
           <Route path='/admin' element={<Admin />}></Route>
+          <Route path='/view_course' element={<View_course />}></Route>
           
         </Routes>
       </BrowserRouter>

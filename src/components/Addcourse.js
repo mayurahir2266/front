@@ -27,6 +27,14 @@ function Add_course() {
                 placeholder="text your course"
               />
             </div>
+            <div className="form-group mt-3">
+              <label>Course Fee</label>
+              <input
+                type="integer"
+                className="form-control mt-1" 
+                placeholder="Enter Course Fee"
+              />
+            </div>
             
             <div className="d-grid gap-2 mt-3">
             <button type="submit" className="btn btn-primary" >
