@@ -45,12 +45,12 @@
   }
   .delete{
     border-radius: 8px;
-    background-color: brown;
+    background-color: rgb(100, 45, 126);
     color: white;
     width: 100px;
   }
   .delete:hover{
-    background-color: white;
-    color: brown;
+    background-color: rgb(72, 65, 77);
+    color: rgb(157, 136, 235);
     transition: 0.6s;
   }

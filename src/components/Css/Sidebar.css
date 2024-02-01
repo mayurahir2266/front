@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  a{
+    list-style: none !important;
+    text-decoration: none !important;
+    color: black !important;
+  }
+  
+  ul{
+    overflow: auto;
+  }
+  .sidebar_scroll{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: start;
+  }
+  .bgcolorsidebar::-webkit-scrollbar{
+    width: 0px ;
+  }
+
+.bgcolorsidebar{
+    background-color: #343A40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: #BDC1C8;
+    width: 225px !important;
+  }
+
+  .bgcolorsidebar li {
+    padding: 4px 20px;
+    /* font-size: 15px; */
+  }
+  .bgcolorsidebar li a{
+    color: #BDC1C8 !important;
+    font-size: 13px;
+  }
+
+  .btn1{
+    width: 190px !important;
+  }
+  .btn{
+    width: auto;
+  }

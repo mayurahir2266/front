@@ -1,0 +1,36 @@
+.dashpad{
+    padding-inline-start: 225px;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+.dashcol{
+    background-color: whitesmoke;
+}
+.main-card{
+    background-color: rgb(123, 194, 194);
+    color: white !important;
+    border-radius: 5px;
+}
+.main-card1{
+    background-color: rgb(115, 209, 120);
+    color: white !important;
+    border-radius: 5px;
+}
+.main-card2{
+    background-color: rgb(195, 211, 106);
+    color: white !important;    
+    border-radius: 5px;
+
+}
+.main-card3{
+    background-color: rgb(224, 128, 90);
+    color: white !important;
+    border-radius: 5px;
+}
+.link{
+    text-decoration: none !important;
+    color: black;
+    display: flex;
+    justify-content: center;
+}

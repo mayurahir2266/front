@@ -17,7 +17,7 @@ function View_course() {
 
     <h3>===============   View Your Course Please   ===============</h3> <br />
 
-    <table width="80%" align='center'>
+    <table width="80%" align='center' className='container' >
         <thead>
             <tr>
                 <th>Course Name</th> 
@@ -27,19 +27,19 @@ function View_course() {
             </thead>
             <tbody>
             <tr>
-                <td>hello</td>
-                <td>hello</td>
+                <td>design</td>
+                <td>100000</td>
                 <button className='delete'>delete</button>
             </tr>
             <tr>
-                <td>hello</td>
-                <td>hello</td>
+                <td>flutter</td>
+                <td>120000</td>
                 <button className='delete'>delete</button>
 
             </tr>
             <tr>
-                <td>hello</td>
-                <td>hello</td>
+                <td>full stack</td>
+                <td>150000</td>
                 <button className='delete'>delete</button>
 
             </tr>
