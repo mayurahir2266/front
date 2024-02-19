@@ -1,5 +1,5 @@
 import '../components/Css/Addcourse.css';
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import axios from 'axios';
 import { useState } from 'react';
 
@@ -7,27 +7,46 @@ import { useState } from 'react';
 function Add_course() {
 
   let [c_name, setc_name] = useState('');
-  let [content_id, setcontent_id] = useState('');
+  let [course_fee, setcourse_fee] = useState('');
+  let [error, setError] = useState('');
 
   const btnhandler = () => {
-    axios.post('http://localhost:5000/addcourse', {
-
+    axios.post('http://localhost:5000/course/addcourse', {
       c_name: c_name,
-      content_id: content_id
-      
-    })
-    
-      .then(function (response) {
+      course_fee: course_fee,
+      error: error    
+    }) .then(function (response) {
         // handle success
         console.log(response);
+
+        if (response.data.status === "succesfully added") {
+          Navigate("/")
+        }
+    
+        else {
+          setError(response.data.status);
+          // alert("please enter your course");
+        }
+    
+        if (response.data.status === " ") {
+          setError(response.data);
+          alert("please enter your course and fees");
+        }
+    
+        // if (response.data.status === "check your data") {
+        //   setError(response.data.status);
+        //   alert("check your data");
+        // }
+    
+        // if (response.data.status === "check your data") {
+        //   setError(response.data.status);
+        //   alert("check your data");
+        // } 
       })
       .catch(function (error) {
         // handle error
         console.log(error);
       })
-      .finally(function () {
-        // always executed
-      });
   }
 
   return (
@@ -54,7 +73,7 @@ function Add_course() {
                 <label>Course Fee</label>
                 <input
                   type="integer"
-                  onChange={(e) => { setcontent_id(e.target.value) }}
+                  onChange={(e) => { setcourse_fee(e.target.value) }}
                   className="form-control mt-1"
                   placeholder="Enter Course Fee"
                 />

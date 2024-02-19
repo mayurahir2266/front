@@ -2,10 +2,16 @@
     padding-inline-start: 225px;
     display: flex;
     justify-content: space-between;
-    background-color: whitesmoke;
+    text-shadow: 2px 1px 3px grey;
+    background-color: white !important;
 }
 .dashcol{
-    background-color: whitesmoke;
+    background-color: white !important;
+    
+}
+.cardtxtcol{
+    box-shadow:7px 4px 7px grey;
+
 }
 .main-card{
     background-color: rgb(123, 194, 194);

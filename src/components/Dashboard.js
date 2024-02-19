@@ -48,7 +48,7 @@ function Dashbord() {
 
                     {/* -------------------- card 3 -------------------- */}
 
-                    <Card style={{ width: '14.5rem' }} className='cardcol3'>
+                    <Card style={{ width: '14.5rem' }} className='cardcol3 cardtxtcol'>
                         <Card.Body className='main-card2'>
                             <Card.Title className='text-start m-2'><h2 className='fontwe'>40</h2></Card.Title>
                             <Card.Text className='text-start m-2'>

@@ -1,7 +1,7 @@
 // import React from "react";
 // import '../components/Css/Login.css';
 // import { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, Navigate} from "react-router-dom";
 import axios from 'axios';
 import { useState } from 'react';
 
@@ -11,24 +11,49 @@ function Login() {
   
   let [email, setemail] = useState('');
   let [password, setpassword] = useState('');
+  let [error, setError] = useState('');
 
   const btnhandler = () => {
     axios.post('http://localhost:5000/login',{
       
       email: email,
-      password: password
+      password: password,
+      error: error
+      
     })
   .then(function (response) {
     // handle success
     console.log(response);
+    if (response.data.status === "success") {
+      Navigate("/admin")
+    }
+
+    else {
+      setError(response.data.status);
+      alert("please enter your email and password");
+    }
+
+    if (response.data.status === " ") {
+      setError(response.data.status);
+      alert("please enter your email and password");
+    }
+
+    if (response.data.status === "check your email") {
+      setError(response.data.status);
+      alert("check your password");
+    }
+
+    if (response.data.status === "check your password") {
+      setError(response.data.status);
+      alert("check your password");
+    }  
+
+
   })
   .catch(function (error) {
     // handle error
     console.log(error);
   })
-  .finally(function () {
-    // always executed
-  });
   }
   
   
